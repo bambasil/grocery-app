@@ -3,12 +3,20 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import { CartContextProvider } from './CartContext';
+import { TestContextProvider } from './TestContext';
+import {BrowserRouter} from "react-router-dom"
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  <BrowserRouter>
+  <TestContextProvider>
+  <CartContextProvider>
   <React.StrictMode>
     <App />
   </React.StrictMode>
+  </CartContextProvider>
+  </TestContextProvider>
+  </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function

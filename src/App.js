@@ -1,23 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState, useContext } from "react";
+import "./App.css";
+import { cartContext } from "./CartContext";
+import { Route, Routes, Navigate} from "react-router-dom";
+import Vegetables from "./pages/vegatable";
+import Menu from "./pages/menu";
+import { useEffect } from "react";
 
 function App() {
+  const context = useContext(cartContext);
+ 
+  const [isCartOpen, setIsCartOpen] = useState(false);
+
+  function closeCartHandler() {
+    setIsCartOpen(false);
+  }
+
+  function openCartHandler() {
+    setIsCartOpen(true);
+  }
+  function openCartHandlerParent() {
+    openCartHandler();
+    context.checkout();
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="display">
+      {/* <Header onOpenCart={openCartHandlerParent} /> */}
+      {/* <div className={isCartOpen ? "overlay" : "hidden"} />
+      <Cart isCartOpen={isCartOpen} onCloseCart={closeCartHandler} />
+       */}
+
+      <Routes>
+        <Route path="/" element={<Navigate to="/menu" />} />
+        <Route path="/vegetables" element={<Vegetables />} />
+        <Route path="/menu" element={<Menu />} />
+      </Routes>
     </div>
   );
 }

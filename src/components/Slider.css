@@ -1,0 +1,52 @@
+.recipe-parent {
+  background-image: url(https://mikesorganic.com/wp-content/uploads/2020/01/carrot-cake-1200x800.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  width: 700px;
+  height: 300px;
+  align-items: end;
+  position: relative;
+  margin-top: 20px;
+}
+
+.recipe-parent::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: inherit;
+  position: absolute;
+  filter: brightness(70%);
+}
+
+.recipe-child {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 40px;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 20px;
+  z-index: 2;
+}
+
+.ingr-button {
+  /* background-color: #5cd4bd; */
+  background-color:orangered;
+  color: white;
+  border: transparent;
+  border-radius: 10px;
+  padding: 8px 20px;
+  height: 30px;
+}
+
+.recipe-title--small {
+  color: white;
+}
+
+.recipe-title--big {
+  color: white;
+  font-size: 20px;
+  z-index: 100;
+}
+
+

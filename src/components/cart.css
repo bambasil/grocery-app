@@ -1,0 +1,47 @@
+.cart-container {
+  
+  position: absolute;
+  background-color: white;
+  height: 100%;
+  width: 350px;
+  right: 0;
+  top: 0;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: 0.5s opacity ease-in-out;
+}
+
+.cart-heading {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.close-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 12px;
+}
+
+.checkout-btn {
+  color: white;
+  background: black;
+  border: none;
+  display: block;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin: 24px 10px;
+}
+
+.checkout-container {
+  margin-top: 40px;
+  position: absolute;
+  bottom: 30px;
+  background-color: #ece6e0;
+  width: 100%;
+}
+
+.subtotal-box {
+  font-size: 10px;
+  padding-left: 10px;
+}

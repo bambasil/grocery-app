@@ -1,0 +1,71 @@
+
+
+.item-box{
+    background-color: white;
+    width: 750px;
+    height:200px ;
+    border-radius: 20px;
+    display: flex;
+    gap: 30px;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+img{
+    width: 150px;
+}
+
+.item-description{
+   margin-top: 20px; 
+   display: flex;
+   flex-direction: column;
+}
+
+.button-parent{
+    display: flex;
+    gap: 20px;
+}
+
+.button-child{
+    display: flex;
+    gap: 10px;
+}
+
+.add-button{
+    padding: 8px 35px;
+    background-color: orangered;
+    border-color: transparent;
+    border-radius: 20px;
+    color: white;
+}
+
+
+.plus-button{
+    border: solid 2px orangered;
+    width: 20px;
+    height: 20px;
+    border-radius:100px;
+    padding-right:3px;
+    padding-bottom:3px;
+}
+
+.minus-button{
+    border: solid 2px orangered;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    padding-right:3px;
+    padding-bottom:3px;
+}
+
+.back-icon{
+    font-size:40px !important;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* 
+.add-icon{
+    width: 200px;
+    height: 2px;
+} */

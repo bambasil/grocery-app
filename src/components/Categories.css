@@ -1,0 +1,54 @@
+.category-body {
+  margin-top: 20px;
+}
+
+.category-parent {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.category-child {
+  background-repeat: no-repeat;
+  height: 230px;
+  width: 200px;
+  border-radius: 20px;
+  display: flex;
+  align-items: end;
+  font-weight: 500;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  background-size: cover;
+  cursor: pointer;
+
+}
+/* 
+.category-child2{
+    background-image: url(https://img.freepik.com/premium-photo/wheat-grains-isolated-white-background-wheat-seeds-close-up_544249-2603.jpg?w=2000);
+    background-repeat: no-repeat;
+    height: 230px;
+    width: 200px;
+    border-radius: 20px;
+    display: flex;
+    align-items: end;
+    font-weight: 500;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    background-size: cover;
+
+
+}
+
+.category-child3{
+    background-image: url(https://t4.ftcdn.net/jpg/01/43/52/19/360_F_143521939_M8tew58TRXKNRjXiBOk2u0qkQ8vnJpaW.jpg);
+    background-repeat: no-repeat;
+    height: 230px;
+    width: 200px;
+    border-radius: 20px;
+    display: flex;
+    align-items: end;
+    font-weight: 500;
+    padding-bottom: 20px;
+    padding-left: 20px;
+} */
