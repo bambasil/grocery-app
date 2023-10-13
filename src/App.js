@@ -30,7 +30,8 @@ function App() {
       <Cart isCartOpen={isCartOpen} onCloseCart={closeCartHandler} />
        */}
 
-       {/* new comment */}
+       {/* hello comment */}
+
 
       <Routes>
         <Route path="/" element={<Navigate to="/menu" />} />
